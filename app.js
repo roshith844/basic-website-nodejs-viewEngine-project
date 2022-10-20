@@ -3,12 +3,7 @@ const express = require('express');
 const app = express(); // calls express
 const expressLayouts = require('express-ejs-layouts')
 // server for localprot
-const requestListener = function (req, res) {
-     res.writeHead(200);
-     res.end('Hello, World!');
-}
-
-const server = http.createServer(requestListener);
+const server = http.createServer(app);
 server.listen(8080);
 // static files
 app.use(express.static('public'))
