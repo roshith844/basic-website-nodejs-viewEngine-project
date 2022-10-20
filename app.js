@@ -12,10 +12,10 @@ app.set('view engine', 'ejs');
 
 //navigation
 app.get('', (req,res) => {
-     res.render('index')
+     res.render('index',{title: 'A web page'})
 })
 app.get('/about',(req,res)=>{
-     res.render('about')
+     res.render('about',{layout: './layouts/sidebar.ejs', title: 'A web Page'})
 })
 
 
